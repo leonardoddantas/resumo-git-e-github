@@ -25,5 +25,16 @@
     <p><strong>git status</strong> -- mostrar o status da área de preparação e o estado dos arquivos.</p>
     <p><strong>https://readme.so/pt</strong> -- Link para editar um arquivo README. Depois que você editar você pode copiar o que está lá e cola em seu arquivo README.</p>
     <p><strong>Docs GitHub</strong> -- Na parte da documentação do GitHub, que é escrevendo com o GitHub, tem exemplos de como editar esse arquivo, tipo cmo criar um título, um link ...</p>
+    <p><strong>git add</strong> -- Adicionar arquivos</p>
+    <p><strong>git commit -m "mesagem"</strong> -- Faz um commit e passa uma mesagem em relação a esse commit.</p>
+    <p><strong>git log</strong> -- Mostar o histórico do commits.</p>
+    <p><strong>.gitkeep</strong> -- Quando uma pasta está vazia ela não vai ser adicionada. Ser você vê alguma pasta com um arquivo .gitkeep, é para adicionar aquela pasta sem precisar criar arquivos dentro dela naquele momento.</p>
+    <p><strong>.gitignore</strong> -- Você pode colocar pasta e arquivo que não quer que sejam carregados para o GitHub.</p>
+    <p><strong>rm -rf .git</strong> -- Caso você tenha dado um git init sem querer em uma pasta errada, você pode usar esse comando para desfazer.</p>
+    <p><strong>git restore nome_do_arquivo</strong> -- Para desfazer alterações. Vamos supor que você tenha adicionado um configuração em um arquivo (se você dê git status ele vai está modificado), mas depois resolveu voltar a como era antes. Então é so executar esse comando.</p>
+    <p><strong>git commit --amend -m "nova mesagem"</strong> -- Para mudar mesagem do último commit.</p>
+    <p><strong>git reset --soft hash_do_commit</strong> -- Ele vai desfazer os commits prosteriores ao commit passado(desfazer os commits que vierão depois do que passou o hash), e os arquivos que estavam nos commist desfeitos ficarão como você tivesse feito um git add neles.</p>
+    <p><strong>git reset --mixed hash_do_commit</strong> -- Ele vai desfazer os commits prosteriores ao commit passado(desfazer os commits que vierão depois do que passou o hash), e os arquivos que estavam nos commist desfeitos ficarão como você nao tivesse feito um git add neles, ou seja, ficarão na área de preparação.</p>
+    <p><strong>git reset --hard hash_do_commit</strong> -- Ele vai desfazer os commits prosteriores ao commit passado(desfazer os commits que vierão depois do que passou o hash), e os arquivos que estavam nos commist desfeitos também serão desfeitos, apagados.</p>
 </body>
 </html>
